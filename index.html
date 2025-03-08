@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPL Insider</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <!-- navbar section  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold fs-2" href="#">EPL INSIDER</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="menu" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">EPL INSIDER</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active fs-5 fw-4" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5 fw-4" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5 fw-4" href="#">Fixtures & Results</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5 fw-4" href="#">Standings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5 fw-4" href="#">Transfers</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fs-5 fw-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Teams
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3 mt-lg-0" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner or title section  -->
+      <section id="title">
+        <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                First Slide
+                <div class="carousel-item active position-relative">
+                    <img src="./images/westham.jpg" class="d-block w-100 banner-image" alt="West Ham">
+                    <div class="position-absolute bottom-0 w-100" style="height: 100%; background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2));"></div>
+                    <div class="position-absolute bottom-0 text-white text-center p-4 w-100">
+                        <h1 class="text-start fs-5 fw-bold">Club News</h1>
+                        <h1 class="heading text-start">West Ham 2-0 Leicester: Hammers cruise to victory</h1>
+                        <p class="lead text-start">Leicester City's struggles at the bottom end of the Premier League table worsened as West Ham United cruised to a comfortable <br> 2-0 victory at the London Stadium. The hosts dominated the game from the outset.</p>
+                        <div class="text-start">
+                            <button type="button" class="btn btn-light btn-lg text-dark fw-bold">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                Second Slide
+                <div class="carousel-item position-relative">
+                    <img src="./images/crystal palace.jpg" class="d-block w-100 banner-image" alt="Crystal Palace">
+                    <div class="position-absolute bottom-0 w-100" style="height: 100%; background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2));"></div>
+                    <div class="position-absolute bottom-0 text-white text-center p-4 w-100">
+                        <h1 class="text-start fs-5 fw-bold">Team News</h1>
+                        <h1 class="heading text-start">Amorim defends 'special' Bruno after Keane criticism</h1>
+                        <p class="lead text-start">Manchester United boss Amorim says his opinion about Bruno Fernandes is more important that Roy Keane's</p>
+                        <div class="text-start">
+                            <button type="button" class="btn btn-light btn-lg text-dark fw-bold">Read More</button>
+                        </div>
+                    </div>
+                </div>
+    
+                Third Slide
+                <div class="carousel-item position-relative">
+                    <img src="./images/chuna.jpg" class="d-block w-100 banner-image" alt="Chuna">
+                    <div class="position-absolute bottom-0 w-100" style="height: 100%; background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2));"></div>
+                    <div class="position-absolute bottom-0 text-white text-center p-4 w-100">
+                        <h1 class="text-start fs-5 fw-bold">Match Report</h1>
+                        <h1 class="heading text-start">West Ham 2-0 Leicester: Hammers cruise to victory</h1>
+                        <p class="lead text-start">Leicester City's struggles at the bottom end of the Premier League table worsened as West Ham United cruised to a comfortable <br> 2-0 victory at the London Stadium. The hosts dominated the game from the outset.</p>
+                        <div class="text-start">
+                            <button type="button" class="btn btn-light btn-lg text-dark fw-bold">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            Carousel Controls
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div> -->
+        <div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img src="./images/westham.jpg" class="d-block w-100 banner-image" alt="West Ham">
+              <div class="position-absolute bottom-0 w-100" style="height: 100%; background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2));"></div>
+                <div class="carousel-caption">
+                  <h1 class="fw-bold">West Ham 2-0 Leicester: Hammers cruise to victory</h1>
+                  <p class="fw-semibold">Leicester City's struggles at the bottom end of the Premier League table worsened as West Ham United cruised to a comfortable <br> 2-0 victory at the London Stadium. The hosts dominated the game from the outset.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Read More</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/crystal palace.jpg" class="d-block w-100 banner-image" alt="Crystal Palace">
+              <div class="position-absolute bottom-0 w-100" style="height: 100%; background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2));"></div>
+                <div class="carousel-caption">
+                  <h1 class="fw-bold">Amorim defends 'special' Bruno after Keane criticism.</h1>
+                  <p>Manchester United boss Amorim says his opinion about Bruno Fernandes is more important that Roy Keane's</p>
+                  <p class="fw-semibold"><a class="btn btn-lg btn-primary" href="#">Read more</a></p>
+                </div>
+            </div>
+            <div class="carousel-item active">
+              <img src="./images/chuna.jpg" class="d-block w-100 banner-image" alt="Chuna">
+              <div class="position-absolute bottom-0 w-100" style="height: 100%; background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2));"></div>
+                <div class="carousel-caption">
+                  <h1 class="fw-bold">Amorim defends 'special' Bruno after Keane criticism.</h1>
+                  <p class="fw-semibold">Manchester United manager Rúben Amorim insists his opinion on Bruno Fernandes matters far more than that of club legend Roy Keane, emphasizing his strong support for the midfielder despite Keane’s past criticisms.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+
+    <!-- two articles section  -->
+     <section id="article-heading">
+        <div class="container ">
+               <!-- articles code here  -->
+      <div class="container">
+        <div class="row mb-2 my-5">
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <!-- Image on the left -->
+              <div class="col-md-4">
+                <img src="images/sobaslia.webp" class="w-100 h-100" style="object-fit: cover;" alt="Thumbnail">
+            </div>
+              <!-- Text on the right -->
+              <div class="col-md-8 p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2" style="color: #208662 !important;">News</strong>
+                <h3 class="mb-0">"Liverpool Triumph Over Man City to Extend Title Lead"</h3>
+                <div class="mb-1 text-body-secondary">Nov 12</div>
+                <p class="card-text mb-auto">Liverpool defeat Man City 2-0, extending their lead at the top to 11 points with a dominant display.</p>
+                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                  <img src="chevron-right.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <!-- Image on the left -->
+              <div class="col-md-4">
+                <img src="images/rice.webp" class="w-100 h-100" style="object-fit: cover;" alt="Thumbnail">
+              </div>
+              <!-- Text on the right -->
+              <div class="col-md-8 p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2" style="color: #208662 !important;">News</strong>
+                <h3 class="mb-0">"Arsenal Stumble at Home in Costly Defeat to West Ham"</h3>
+                <div class="mb-1 text-body-secondary">Nov 11</div>
+                <p class="mb-auto">Arsenal suffer a 1-0 defeat to West Ham, dealing a blow to their title hopes.</p>
+                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                  Continue reading
+                  <img src="chevron-right.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          </div>
+     </section>
+
+     <!-- full news section  -->
+      <section class="news">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-8">
+                  <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                    From the Firehose
+                  </h3>
+            
+                  <div class="container mt-4">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-danger text-white text-center">
+                            <h5 class="mb-0">Fixtures & Results</h5>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-danger fw-bold">Upcoming Fixtures</h6>
+                            <div class="mb-3 p-3 border rounded bg-white">
+                                <div class="text-center text-muted small">Sat, Mar 8 - Old Trafford</div>
+                                <div class="d-flex justify-content-center align-items-center gap-3 mt-2">
+                                    <div class="text-center">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" class="img-fluid" style="width: 30px;">
+                                        <div class="small fw-bold">Man Utd</div>
+                                    </div>
+                                    <div class="text-center fw-bold fs-5">15:00</div>
+                                    <div class="text-center">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg" class="img-fluid" style="width: 30px;">
+                                        <div class="small fw-bold">Arsenal</div>
+                                    </div>
+                                </div>
+                            </div>
+                          <div class="mb-3 p-3 border rounded bg-white">
+                            <div class="text-center text-muted small">Sun, Mar 9 - Ethihad</div>
+                            <div class="d-flex justify-content-center align-items-center gap-3 mt-2">
+                                <div class="text-center">
+                                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/120px-Manchester_City_FC_badge.svg.png" alt="Manchester City" class="img-fluid" style="width: 30px;">
+                                  <div class="small fw-bold">Man City</div>
+                                </div>
+                                <div class="text-center fw-bold fs-5">15:00</div>
+                                <div class="text-center">
+                                  <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/120px-Chelsea_FC.svg.png" alt="Chelsea" class="img-fluid" style="width: 30px;">
+                                  <div class="small fw-bold">Chelsea</div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                            <h6 class="text-danger fw-bold mt-4">Recent Results</h6>
+                            <div class="mb-3 p-3 border rounded bg-white">
+                                <div class="text-center text-muted small">Fri, Feb 28 - Old Trafford</div>
+                                <div class="d-flex justify-content-center align-items-center gap-3 mt-2">
+                                    <div class="text-center">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" class="img-fluid" style="width: 30px;">
+                                        <div class="small fw-bold">Man Utd</div>
+                                    </div>
+                                    <div class="text-center fw-bold fs-5 text-success">2 - 0</div>
+                                    <div class="text-center">
+                                        <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Arsenal_FC.svg" class="img-fluid" style="width: 30px;">
+                                        <div class="small fw-bold">Arsenal</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="container py-3">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                          <h4> Man City's trophy hopes alive as Bournemouth's rise continues</h4>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-body-secondary">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                        <div class="card-body">
+                          <h4> Man City's trophy hopes alive as Bournemouth's rise continues</h4>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                              <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-body-secondary">9 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                </div>
+            
+                <div class="col-md-4">
+                  <div class="position-sticky" style="top: 2rem;">
+                    <div class="p-4 mb-4 bg-light rounded shadow-sm">
+                      <div class="table-responsive">
+                        <table class="table table-striped table-hover text-center align-middle">
+                          <thead class="table-dark">
+                            <tr>
+                              <th scope="col">POS</th>
+                              <th scope="col">TEAM</th>
+                              <th scope="col">P</th>
+                              <th scope="col">W</th>
+                              <th scope="col">D</th>
+                              <th scope="col">L</th>
+                              <th scope="col">GD</th>
+                              <th scope="col">PTS</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Manchester City</td>
+                              <td>10</td>
+                              <td>6</td>
+                              <td>3</td>
+                              <td>2</td>
+                              <td>+3</td>
+                              <td>25</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Manchester United</td>
+                              <td>10</td>
+                              <td>4</td>
+                              <td>2</td>
+                              <td>3</td>
+                              <td>+4</td>
+                              <td>22</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Aston Villa</td>
+                              <td>10</td>
+                              <td>8</td>
+                              <td>3</td>
+                              <td>1</td>
+                              <td>+3</td>
+                              <td>19</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Liverpool</td>
+                              <td>10</td>
+                              <td>9</td>
+                              <td>4</td>
+                              <td>4</td>
+                              <td>+4</td>
+                              <td>19</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">5</th>
+                              <td>Arsenal</td>
+                              <td>10</td>
+                              <td>6</td>
+                              <td>3</td>
+                              <td>3</td>
+                              <td>+6</td>
+                              <td>17</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                
+                    <div>
+                      <h4 class="fst-italic mb-3">Recent Posts</h4>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a class="d-flex flex-column flex-md-row gap-3 align-items-center py-3 link-dark text-decoration-none border-bottom" href="#">
+                            <img src="./images/kimich.jpg" class="img-fluid rounded" alt="Kimich" style="width: 40%; height: auto;">
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Arsenal Interested in signing Kimich for free</h6>
+                              <small class="text-muted">January 15, 2024</small>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="d-flex flex-column flex-md-row gap-3 align-items-center py-3 link-dark text-decoration-none border-bottom" href="#">
+                            <img src="./images/eliminated.jpg" class="img-fluid rounded" alt="Manchester United" style="width: 40%; height: auto;">
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Another disappointing result for Man United</h6>
+                              <small class="text-muted">January 14, 2024</small>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="d-flex flex-column flex-md-row gap-3 align-items-center py-3 link-dark text-decoration-none border-bottom" href="#">
+                            <img src="images/banned.jpg" class="img-fluid rounded" alt="Referee Banned" style="width: 40%; height: auto;">
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Former Premier League referee banned by UEFA</h6>
+                              <small class="text-muted">January 13, 2024</small>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                
+                
+
+      <section class="more-articles">
+        <div class="container">
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="custom-cards">        
+        <div class="container" id="custom-cards">
+          <div class="row row-cols-1 row-cols-md-2 align-items-stretch g-4 py-5">
+            
+            <div class="col d-flex">
+              <div class="card card-cover w-100 text-bg-dark rounded-4 shadow-lg" 
+                   style="background-image: url('./images/kimich.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 400px;">
+                <div class="position-absolute bottom-0 start-0 w-100 p-4"
+                     style="background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));">
+                  <h4 class="fw-bold text-white">Sesko transfer: Leipzig striker draws Premier League interest.</h4>
+                  <ul class="d-flex list-unstyled mt-2">
+                    <li class="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="28" height="28" 
+                           class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-2">
+                      <small class="text-white">California</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col d-flex">
+              <div class="card card-cover w-100 text-bg-dark rounded-4 shadow-lg" 
+                   style="background-image: url('./images/eliminated.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; min-height: 400px;">
+                <div class="position-absolute bottom-0 start-0 w-100 p-4"
+                     style="background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));">
+                  <h4 class="fw-bold text-white">Sesko transfer: Leipzig striker draws Premier League interest.</h4>
+                  <ul class="d-flex list-unstyled mt-2">
+                    <li class="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="28" height="28" 
+                           class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-2">
+                      <small class="text-white">California</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="cardss">
+        <div class="container px-4 py-5" id="custom-cards">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-2">
+            
+            <!-- Left Small Background Image Card -->
+            <div class="col d-flex">
+              <div class="card card-cover w-100 h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                   style="background-image: url('./images/ssesko.jpg'); background-size: cover; background-position: center; min-height: 250px;">
+                <div class="position-absolute bottom-0 start-0 w-100 p-4" 
+                     style="background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));">
+                  <h4 class="fw-bold text-white">Sesko transfer: Leipzig striker draws Premier League interest.</h4>
+                  <ul class="d-flex list-unstyled mt-2">
+                    <li class="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="28" height="28" class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-2">
+                      <small class="text-white">California</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <!-- First Middle Card -->
+            <div class="col">
+              <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden">
+                <img src="./images/mateta.jpg" class="card-img-top" alt="Mateta News">
+                <div class="card-body d-flex flex-column p-4">
+                  <h5 class="card-title fw-bold">Paqueta betting hearing to begin this month as FA seeks lifetime ban</h5>
+                  <p class="card-text flex-grow-1 text-muted">Lucas Paqueta's betting charge hearing is due to take place this month and will last three weeks, Sky Sports News understands.</p>
+                  <a href="#" class="btn btn-primary mt-auto fw-semibold px-4 py-2 rounded-3 shadow-sm">Read More</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Second Middle Card -->
+            <div class="col">
+              <div class="card h-100 shadow-lg border-0 rounded-4 overflow-hidden">
+                <img src="./images/card 1.jpg" class="card-img-top" alt="Premier League Analysis">
+                <div class="card-body d-flex flex-column p-4">
+                  <h5 class="card-title fw-bold">Rice's Running and Why His Future Lies at No 8, Not No 6</h5>
+                  <p class="card-text flex-grow-1 text-muted">Nick Wright uses a blend of data and opinion to shed light on need-to-know stories from up and down the Premier League.</p>
+                  <a href="#" class="btn btn-primary mt-auto fw-semibold px-4 py-2 rounded-3 shadow-sm">Read More</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Right Small Background Image Card -->
+            <div class="col-12 col-sm-12 col-md-12 d-flex">
+              <div class="card card-cover w-100 h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                   style="background-image: url('./images/hojiland.jpg'); background-size: cover; background-position: center; min-height: 250px;">
+                <div class="position-absolute bottom-0 start-0 w-100 p-4" 
+                     style="background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));">
+                  <h4 class="fw-bold text-white">Man Utd: Hojlund urged to stop clashes with Dalot</h4>
+                  <ul class="d-flex list-unstyled mt-2">
+                    <li class="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="28" height="28" class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-2">
+                      <small class="text-white">California</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </section>
+
+      <section class="banner-image">
+        <div class="carousel-item active position-relative">
+          <img src="./images/westham.jpg" class="d-block w-100 banner-image" alt="West Ham">
+          <div class="position-absolute bottom-0 w-100" style="height: 100%; background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));"></div>
+      </div>
+      </section>
+      
+      <section class="more articles">
+        <div class="container mb-5">
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container" style="background-color: rgb(90, 89, 89);" >
+        <ul class="nav justify-content-center pt-5  mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+          
+        </ul>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-2 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"></a>
+            <span class="mb-3 mb-md-0 text-white">© 2024 Company, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary fs-4" href="#"><i class="bi bi-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary fs-4" href="#"><i class="bi bi-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary fs-4" href="#"><i class="bi bi-facebook"></i></a></li>
+          </ul>
+          
+          
+        </footer>
+      </div>
+
+</body>
+</html>
